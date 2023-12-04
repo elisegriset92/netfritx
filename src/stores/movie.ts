@@ -1,42 +1,42 @@
 import { defineStore } from 'pinia'
 import { Movie } from '../../types/index'
-import {ref} from 'vue'
+import { ref } from 'vue'
 export const useMovieStore = defineStore('movie', () => {
 
-  const movieDetails= ref(null) as unknown as Movie | null;
+  const movieDetails = ref(null) as unknown as Movie | null;
   const movie = ref(null) as unknown as Movie | null;
   const videoOnFullScreen = ref('');
   const showFullVideo = ref(false) as unknown as boolean;
   const trendingMovies = ref([]) as unknown as Movie[];
   const movies = ref([]) as unknown as Movie[];
-  const heartedMovies = ref([]) as unknown as Movie[];;
-  const loaderMovie = ref(true) as unknown as boolean;;
-  const showSearchBar = ref(false) as unknown as boolean;;
+  const heartedMovies = ref([]) as unknown as Movie[];
+  const loaderMovie = ref(true) as unknown as boolean;
+  const showSearchBar = ref(false) as unknown as boolean;
   const totalPages = ref(0) as unknown as number;
 
   function setMovies(movies: Movie[]) {
-    this.movies = movies
+    this.movies = movies;
   };
   function setTotalPages(total: Number) {
-    this.totalPages = total
+    this.totalPages = total;
   };
   function setHomePageMovies(movie: Movie) {
-    this.trendingMovies.push(movie)
+    this.trendingMovies.push(movie);
   };
   function setMovieDetails(movie: Movie) {
     this.movieDetails = movie;
   };
   function setLoader(load: boolean) {
-    this.loaderMovie = load
+    this.loaderMovie = load;
   };
   function setFullVideo(arg: any) {
-    this.videoOnFullScreen = 'https://www.youtube.com/embed/' + arg[0].key
+    this.videoOnFullScreen = 'https://www.youtube.com/embed/' + arg[0].key;
   };
   function displayFullVideo(arg: boolean) {
-    this.showFullVideo = arg
+    this.showFullVideo = arg;
   };
   function displaySearchBar(arg: boolean) {
-    this.showSearchBar = arg
+    this.showSearchBar = arg;
   };
   function setHeartedMovies(movie: Movie) {
     const indexOfMovie = this.heartedMovies.findIndex((heartMovie: Movie) => heartMovie.id === movie.id)
@@ -65,7 +65,7 @@ export const useMovieStore = defineStore('movie', () => {
     setLoader,
     setFullVideo,
     displayFullVideo,
-    displaySearchBar, 
+    displaySearchBar,
     setHeartedMovies,
   }
 })

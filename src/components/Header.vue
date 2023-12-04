@@ -17,7 +17,6 @@
       </div>
       <Footer class="mt-10 md:fixed md:w-[120px] md:bottom-0 hidden md:block"/>
     </div>
-
 </template>
 
 <script lang="ts" setup>

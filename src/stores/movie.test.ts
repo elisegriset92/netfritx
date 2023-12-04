@@ -215,7 +215,6 @@ describe('Movie Store', () => {
     expect(store.videoOnFullScreen).toStrictEqual('https://www.youtube.com/embed/' + arg[0].key)
   })
   it('setHeartedMovies', async () => {
-    const heartedMovies = []
     store.setHeartedMovies(movies[0]);
     expect(store.heartedMovies).toStrictEqual([movies[0]])
     store.setHeartedMovies(movies[1]);

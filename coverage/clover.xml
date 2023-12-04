@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1701692223710" clover="3.2.0">
-  <project timestamp="1701692223711" name="All files">
+<coverage generated="1701692717782" clover="3.2.0">
+  <project timestamp="1701692717783" name="All files">
     <metrics statements="71" coveredstatements="71" conditionals="13" coveredconditionals="13" methods="9" coveredmethods="9" elements="93" coveredelements="93" complexity="0" loc="71" ncloc="71" packages="1" files="1" classes="1"/>
     <file name="movie.ts" path="/Users/elisegriset/Documents/DEV/netfritx/src/stores/movie.ts">
       <metrics statements="71" coveredstatements="71" conditionals="13" coveredconditionals="13" methods="9" coveredmethods="9"/>
